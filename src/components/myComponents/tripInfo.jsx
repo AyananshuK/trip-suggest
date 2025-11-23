@@ -21,6 +21,11 @@ const TripInfo = ({trip}) => {
             setPhoto(picUrl)
         });
     };
+    
+    const handleClick = ()=>{
+        const location = trip?.userSelectedOptions?.location?.label;
+        window.open("https://www.google.com/maps/search/?api=1&query=" + location, "_blank", "noopener,noreferrer")
+    };
 
   return (
     <div>
@@ -43,7 +48,7 @@ const TripInfo = ({trip}) => {
                     </h2>
                 </div>
             </div>
-            <Button><IoIosSend /></Button>
+            <Button onClick = {handleClick}><IoIosSend /></Button>
         </div>
     </div>
   )
