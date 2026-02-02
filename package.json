@@ -33,6 +33,12 @@
     "tailwind-merge": "^3.3.0",
     "tailwindcss": "^4.1.7"
   },
+  "overrides": {
+    "react-google-places-autocomplete": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
+  },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
